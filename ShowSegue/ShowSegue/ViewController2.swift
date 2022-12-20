@@ -12,7 +12,8 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        //Bu sayfada back butonunu gizle
+        self.navigationItem.hidesBackButton = true
     }
     
     @IBAction func goto3(_ sender: Any) {
