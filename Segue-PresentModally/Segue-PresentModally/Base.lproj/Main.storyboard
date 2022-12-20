@@ -71,11 +71,23 @@
                                     <segue destination="Y4O-B0-n1a" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Xpb-R9-UX1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrV-94-2Sl">
+                                <rect key="frame" x="28" y="681" width="337.33333333333331" height="62"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go Back (Dismiss)">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tiklaDismiss:" destination="OdX-XG-iIY" eventType="touchUpInside" id="VzJ-CX-COn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z57-bS-G96"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="XrV-94-2Sl" firstAttribute="centerX" secondItem="peK-Qs-Mdq" secondAttribute="centerX" id="3d7-q7-YzA"/>
                             <constraint firstItem="WbE-Nu-xJ4" firstAttribute="top" secondItem="z57-bS-G96" secondAttribute="top" constant="150" id="Kfw-Gl-QuA"/>
+                            <constraint firstItem="z57-bS-G96" firstAttribute="bottom" secondItem="XrV-94-2Sl" secondAttribute="bottom" constant="75" id="OBT-4J-cps"/>
                             <constraint firstItem="z57-bS-G96" firstAttribute="bottom" secondItem="pqW-nr-PF9" secondAttribute="bottom" constant="150" id="S0b-f0-0c6"/>
                             <constraint firstItem="WbE-Nu-xJ4" firstAttribute="centerX" secondItem="peK-Qs-Mdq" secondAttribute="centerX" id="rWb-Ij-NQC"/>
                             <constraint firstItem="pqW-nr-PF9" firstAttribute="centerX" secondItem="peK-Qs-Mdq" secondAttribute="centerX" id="ruT-MW-QTc"/>
@@ -139,6 +151,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Xpb-R9-UX1"/>
         <segue reference="kuo-No-RG6"/>
     </inferredMetricsTieBreakers>
     <resources>
