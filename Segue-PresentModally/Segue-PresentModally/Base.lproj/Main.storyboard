@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Segue_PresentModally" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sayfa1" id="BYZ-38-t0r" customClass="ViewController" customModule="Segue_PresentModally" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="OdX-XG-iIY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="blL-tb-XB5"/>
+                                    <action selector="goto2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lw7-ZJ-CH8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,7 +50,7 @@
         <!--View Controller2-->
         <scene sceneID="vTr-91-fsz">
             <objects>
-                <viewController id="OdX-XG-iIY" customClass="ViewController2" customModule="Segue_PresentModally" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sayfa2" id="OdX-XG-iIY" customClass="ViewController2" customModule="Segue_PresentModally" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="peK-Qs-Mdq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +68,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Y4O-B0-n1a" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Xpb-R9-UX1"/>
+                                    <action selector="goto3:" destination="OdX-XG-iIY" eventType="touchUpInside" id="gio-ad-95i"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrV-94-2Sl">
@@ -101,7 +101,7 @@
         <!--View Controller3-->
         <scene sceneID="lFm-JN-lVc">
             <objects>
-                <viewController id="Y4O-B0-n1a" customClass="ViewController3" customModule="Segue_PresentModally" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sayfa3" id="Y4O-B0-n1a" customClass="ViewController3" customModule="Segue_PresentModally" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IOt-eg-6Qo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,7 +119,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="R8T-TN-APM"/>
+                                    <action selector="goto1:" destination="Y4O-B0-n1a" eventType="touchUpInside" id="Keh-ct-8fq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUV-Od-TKb">
@@ -129,7 +129,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="OdX-XG-iIY" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="kuo-No-RG6"/>
+                                    <action selector="goto2:" destination="Y4O-B0-n1a" eventType="touchUpInside" id="Zgc-DU-gc3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -150,10 +150,6 @@
             <point key="canvasLocation" x="1263" y="25"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Xpb-R9-UX1"/>
-        <segue reference="kuo-No-RG6"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

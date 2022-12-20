@@ -83,7 +83,6 @@
 		7A4CDC4E29510F6A00A79A04 = {
 			isa = PBXGroup;
 			children = (
-				7A4CDC8C2951126300A79A04 /* ViewController3.swift */,
 				7A4CDC5929510F6A00A79A04 /* Segue-PresentModally */,
 				7A4CDC7029510F6B00A79A04 /* Segue-PresentModallyTests */,
 				7A4CDC7A29510F6B00A79A04 /* Segue-PresentModallyUITests */,
@@ -104,14 +103,15 @@
 		7A4CDC5929510F6A00A79A04 /* Segue-PresentModally */ = {
 			isa = PBXGroup;
 			children = (
+				7A4CDC6829510F6B00A79A04 /* Info.plist */,
 				7A4CDC5A29510F6A00A79A04 /* AppDelegate.swift */,
 				7A4CDC5C29510F6A00A79A04 /* SceneDelegate.swift */,
 				7A4CDC5E29510F6A00A79A04 /* ViewController.swift */,
-				7A4CDC6029510F6A00A79A04 /* Main.storyboard */,
+				7A4CDC8A2951122200A79A04 /* ViewController2.swift */,
+				7A4CDC8C2951126300A79A04 /* ViewController3.swift */,
 				7A4CDC6329510F6B00A79A04 /* Assets.xcassets */,
 				7A4CDC6529510F6B00A79A04 /* LaunchScreen.storyboard */,
-				7A4CDC6829510F6B00A79A04 /* Info.plist */,
-				7A4CDC8A2951122200A79A04 /* ViewController2.swift */,
+				7A4CDC6029510F6A00A79A04 /* Main.storyboard */,
 			);
 			path = "Segue-PresentModally";
 			sourceTree = "<group>";
