@@ -11,25 +11,25 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShowSegue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sayfa1" id="BYZ-38-t0r" customClass="ViewController" customModule="ShowSegue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwA-K9-DfD">
-                                <rect key="frame" x="174" y="209" width="45" height="120"/>
+                                <rect key="frame" x="174" y="253" width="45" height="120"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yM-Ue-ZOv">
-                                <rect key="frame" x="107.66666666666669" y="559" width="178" height="74"/>
+                                <rect key="frame" x="107.66666666666669" y="594" width="178" height="74"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go to 2">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BjC-vy-VSk" kind="show" id="XW3-Si-AzK"/>
+                                    <action selector="goto2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GS8-Dw-Y1I"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -51,9 +51,9 @@
         <!--View Controller2-->
         <scene sceneID="Xgo-ge-dn1">
             <objects>
-                <viewController id="BjC-vy-VSk" customClass="ViewController2" customModule="ShowSegue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sayfa2" id="BjC-vy-VSk" customClass="ViewController2" customModule="ShowSegue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iBo-Pg-iD8">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGN-PS-uks">
@@ -63,17 +63,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzY-CN-IJn">
-                                <rect key="frame" x="106.66666666666669" y="485" width="180" height="74"/>
+                                <rect key="frame" x="106.66666666666669" y="520" width="180" height="74"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go to 3">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="gFh-6a-lOr" kind="show" id="qds-Kd-0P4"/>
+                                    <action selector="goto3:" destination="BjC-vy-VSk" eventType="touchUpInside" id="l4I-eM-2AT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oly-z5-E1i">
-                                <rect key="frame" x="140" y="634" width="113" height="74"/>
+                                <rect key="frame" x="140" y="669" width="113" height="74"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Geri">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
@@ -103,9 +103,9 @@
         <!--View Controller3-->
         <scene sceneID="c86-27-tPB">
             <objects>
-                <viewController id="gFh-6a-lOr" customClass="ViewController3" customModule="ShowSegue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sayfa3" id="gFh-6a-lOr" customClass="ViewController3" customModule="ShowSegue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZbG-eT-RMl">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="333-LU-Wn7">
@@ -116,27 +116,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7a-GH-m5O">
-                                <rect key="frame" x="110.66666666666669" y="421" width="172" height="74"/>
+                                <rect key="frame" x="110.66666666666669" y="456" width="172" height="74"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go to 1">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="0VM-1X-cVR"/>
+                                    <action selector="goto1:" destination="gFh-6a-lOr" eventType="touchUpInside" id="3s5-dn-85v"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuP-Ki-xRc">
-                                <rect key="frame" x="107.66666666666669" y="515" width="178" height="74"/>
+                                <rect key="frame" x="107.66666666666669" y="550" width="178" height="74"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go to 2">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BjC-vy-VSk" kind="show" id="Lm2-wb-WzA"/>
+                                    <action selector="goto2:" destination="gFh-6a-lOr" eventType="touchUpInside" id="HPL-CR-0qt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evk-jM-hBx">
-                                <rect key="frame" x="85.666666666666686" y="609" width="222" height="74"/>
+                                <rect key="frame" x="85.666666666666686" y="644" width="222" height="74"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Anasayfa">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
@@ -182,10 +182,6 @@
             <point key="canvasLocation" x="78.625954198473281" y="3.5211267605633805"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Lm2-wb-WzA"/>
-        <segue reference="0VM-1X-cVR"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
