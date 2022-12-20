@@ -19,5 +19,11 @@ class ViewController: UIViewController {
         let gidilecekViewController = storyboard.instantiateViewController(withIdentifier: "sayfa2") as! ViewController2
         navigationController?.pushViewController(gidilecekViewController, animated: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "gotofrom1to3"{
+            print("Sayfa 1'den sayfa 3'e geçiş yapıldı.")
+        }
+    }
 }
 
