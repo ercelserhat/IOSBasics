@@ -19,9 +19,10 @@ class ViewController: UIViewController {
     @IBAction func gonder(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let gidilecekViewController = storyboard.instantiateViewController(withIdentifier: "sayfaB") as! ViewController2
-        let gonderilecekMesaj = girdiAlani.text
-        gidilecekViewController.mesaj = gonderilecekMesaj!
-        self.present(gidilecekViewController, animated: true, completion: nil)
+        let gidecekKisi = Kisiler(kisiId: 222, kisiAdi: "Serhat")
+        gidilecekViewController.kisi = gidecekKisi
+        //self.present(gidilecekViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(gidilecekViewController, animated: true)
     }
     
 }

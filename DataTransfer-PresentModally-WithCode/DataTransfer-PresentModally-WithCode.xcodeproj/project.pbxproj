@@ -17,6 +17,7 @@
 		7A3665222954ED4800E29622 /* DataTransfer_PresentModally_WithCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3665212954ED4800E29622 /* DataTransfer_PresentModally_WithCodeUITests.swift */; };
 		7A3665242954ED4800E29622 /* DataTransfer_PresentModally_WithCodeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3665232954ED4800E29622 /* DataTransfer_PresentModally_WithCodeUITestsLaunchTests.swift */; };
 		7A3665312954EDE300E29622 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3665302954EDE300E29622 /* ViewController2.swift */; };
+		7A3665332954F30200E29622 /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3665322954F30200E29622 /* Kisiler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7A3665212954ED4800E29622 /* DataTransfer_PresentModally_WithCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransfer_PresentModally_WithCodeUITests.swift; sourceTree = "<group>"; };
 		7A3665232954ED4800E29622 /* DataTransfer_PresentModally_WithCodeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransfer_PresentModally_WithCodeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7A3665302954EDE300E29622 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		7A3665322954F30200E29622 /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				7A36650B2954ED4800E29622 /* LaunchScreen.storyboard */,
 				7A36650E2954ED4800E29622 /* Info.plist */,
 				7A3665302954EDE300E29622 /* ViewController2.swift */,
+				7A3665322954F30200E29622 /* Kisiler.swift */,
 			);
 			path = "DataTransfer-PresentModally-WithCode";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				7A3665312954EDE300E29622 /* ViewController2.swift in Sources */,
 				7A3665012954ED4700E29622 /* AppDelegate.swift in Sources */,
 				7A3665032954ED4700E29622 /* SceneDelegate.swift in Sources */,
+				7A3665332954F30200E29622 /* Kisiler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

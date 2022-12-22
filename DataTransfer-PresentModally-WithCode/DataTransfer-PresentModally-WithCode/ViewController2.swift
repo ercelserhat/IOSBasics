@@ -11,12 +11,11 @@ class ViewController2: UIViewController {
 
     @IBOutlet weak var etiket: UILabel!
     
-    var mesaj: String?
+    var kisi = Kisiler()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        etiket.text = mesaj!
-        
+        print("Kisi id: \(kisi.kisiId!), Kisi adı: \(kisi.kisiAdi!)")
     }
 
 }
