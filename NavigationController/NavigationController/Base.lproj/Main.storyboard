@@ -71,6 +71,9 @@
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="reply" id="lub-1o-cXs">
                             <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <segue destination="Dco-oB-q7N" kind="show" id="BvT-Ae-tev"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -95,6 +98,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j0F-rA-ajr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75.572519083969468" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="sza-Jl-SkG">
+            <objects>
+                <viewController id="Dco-oB-q7N" customClass="ViewController3" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FbF-7O-Vb0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="euQ-in-8R5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7TT-Dy-48v">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9eI-eU-Wv2">
+                            <connections>
+                                <action selector="btnEkle:" destination="Dco-oB-q7N" id="eCZ-6v-o7p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="acC-ky-7Gw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2610" y="4"/>
         </scene>
     </scenes>
     <resources>
