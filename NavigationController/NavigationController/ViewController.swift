@@ -23,6 +23,9 @@ class ViewController: UIViewController {
         
     }
 
-
+    @IBAction func btnHeart(_ sender: Any) {
+        print("Liked!")
+    }
+    
 }
 
