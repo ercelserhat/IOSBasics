@@ -17,6 +17,10 @@ class ViewController: UIViewController {
         
         self.navigationItem.largeTitleDisplayMode = .always
         
+        //Image Title
+        let logo = UIImage(named: "logo")
+        self.navigationItem.titleView = UIImageView(image: logo)
+        
     }
 
 
