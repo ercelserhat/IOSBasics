@@ -16,6 +16,8 @@
 		7A7209A42958EDF600772DA6 /* DataTransfer_PerformSegueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7209A32958EDF600772DA6 /* DataTransfer_PerformSegueTests.swift */; };
 		7A7209AE2958EDF600772DA6 /* DataTransfer_PerformSegueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7209AD2958EDF600772DA6 /* DataTransfer_PerformSegueUITests.swift */; };
 		7A7209B02958EDF600772DA6 /* DataTransfer_PerformSegueUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7209AF2958EDF600772DA6 /* DataTransfer_PerformSegueUITestsLaunchTests.swift */; };
+		7A7209BD295B7C7300772DA6 /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7209BC295B7C7300772DA6 /* ViewControllerB.swift */; };
+		7A7209BF295B7C7F00772DA6 /* ViewControllerC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7209BE295B7C7F00772DA6 /* ViewControllerC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7A7209A92958EDF600772DA6 /* DataTransfer-PerformSegueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DataTransfer-PerformSegueUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7209AD2958EDF600772DA6 /* DataTransfer_PerformSegueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransfer_PerformSegueUITests.swift; sourceTree = "<group>"; };
 		7A7209AF2958EDF600772DA6 /* DataTransfer_PerformSegueUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransfer_PerformSegueUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7A7209BC295B7C7300772DA6 /* ViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
+		7A7209BE295B7C7F00772DA6 /* ViewControllerC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				7A7209952958EDF600772DA6 /* Assets.xcassets */,
 				7A7209972958EDF600772DA6 /* LaunchScreen.storyboard */,
 				7A72099A2958EDF600772DA6 /* Info.plist */,
+				7A7209BC295B7C7300772DA6 /* ViewControllerB.swift */,
+				7A7209BE295B7C7F00772DA6 /* ViewControllerC.swift */,
 			);
 			path = "DataTransfer-PerformSegue";
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A7209912958EDF500772DA6 /* ViewController.swift in Sources */,
+				7A7209BD295B7C7300772DA6 /* ViewControllerB.swift in Sources */,
+				7A7209BF295B7C7F00772DA6 /* ViewControllerC.swift in Sources */,
 				7A72098D2958EDF500772DA6 /* AppDelegate.swift in Sources */,
 				7A72098F2958EDF500772DA6 /* SceneDelegate.swift in Sources */,
 			);
