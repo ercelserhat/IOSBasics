@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Bir-->
+        <!--Profil-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TabBar" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,21 +22,45 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sda-VB-5Ka">
+                                <rect key="frame" x="127.33333333333333" y="556" width="138.33333333333337" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Profil Arttır">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="profilArttir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rbB-fE-A4K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuh-qP-Vld">
+                                <rect key="frame" x="145.66666666666666" y="625" width="101.66666666666666" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="İş Arttır">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="isArttir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9tD-K7-83e"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kwh-j0-E8X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="BIQ-4N-nal"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vuh-qP-Vld" secondAttribute="bottom" constant="100" id="NLm-Ms-bor"/>
                             <constraint firstItem="kwh-j0-E8X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TXm-C3-4Yg"/>
+                            <constraint firstItem="Vuh-qP-Vld" firstAttribute="top" secondItem="Sda-VB-5Ka" secondAttribute="bottom" constant="25" id="VjG-Aj-Pf2"/>
+                            <constraint firstItem="Vuh-qP-Vld" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mVF-hR-Hgw"/>
+                            <constraint firstItem="Sda-VB-5Ka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qOx-f4-ejJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Bir" image="imgchecksecilidegil" largeContentSizeImage="imgchecksecili" badgeValue="1" selectedImage="imgchecksecili" springLoaded="YES" id="TwJ-O5-bfX"/>
+                    <tabBarItem key="tabBarItem" title="Profil" image="imgchecksecilidegil" largeContentSizeImage="imgchecksecili" selectedImage="imgchecksecili" springLoaded="YES" id="TwJ-O5-bfX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1001" y="-319"/>
         </scene>
-        <!--İki-->
+        <!--İş-->
         <scene sceneID="E69-zN-4Oj">
             <objects>
                 <viewController id="rpx-Vc-k5i" sceneMemberID="viewController">
@@ -58,7 +82,7 @@
                             <constraint firstItem="SB8-ze-HkN" firstAttribute="centerX" secondItem="FXW-dF-MfM" secondAttribute="centerX" id="tUJ-VR-pfo"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="İki" image="imgclosesecilidegil" selectedImage="imgclosesecili" id="hS8-aV-oDk"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="İş" image="imgclosesecilidegil" selectedImage="imgclosesecili" id="hS8-aV-oDk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTz-OX-RHo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
