@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profil-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TabBar" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,13 +54,13 @@
                             <constraint firstItem="Sda-VB-5Ka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qOx-f4-ejJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profil" image="imgchecksecilidegil" largeContentSizeImage="imgchecksecili" selectedImage="imgchecksecili" springLoaded="YES" id="TwJ-O5-bfX"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="TwJ-O5-bfX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1001" y="-319"/>
         </scene>
-        <!--İş-->
+        <!--View Controller-->
         <scene sceneID="E69-zN-4Oj">
             <objects>
                 <viewController id="rpx-Vc-k5i" sceneMemberID="viewController">
@@ -82,7 +82,7 @@
                             <constraint firstItem="SB8-ze-HkN" firstAttribute="centerX" secondItem="FXW-dF-MfM" secondAttribute="centerX" id="tUJ-VR-pfo"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="İş" image="imgclosesecilidegil" selectedImage="imgclosesecili" id="hS8-aV-oDk"/>
+                    <tabBarItem key="tabBarItem" tag="1" systemItem="featured" id="hS8-aV-oDk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTz-OX-RHo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,10 +108,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="imgchecksecili" width="50" height="50"/>
-        <image name="imgchecksecilidegil" width="50" height="50"/>
-        <image name="imgclosesecili" width="50" height="50"/>
-        <image name="imgclosesecilidegil" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -14,6 +14,32 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let tabItems = tabBarController?.tabBar.items{
+            let item = tabItems[0]
+            item.badgeValue = "1"
+        }
+        
+        let appearance = UITabBarAppearance()
+        appearance.backgroundColor = UIColor.systemIndigo
+        
+        renkDegistir(itemAppearance: appearance.stackedLayoutAppearance)
+        renkDegistir(itemAppearance: appearance.compactInlineLayoutAppearance)
+        renkDegistir(itemAppearance: appearance.inlineLayoutAppearance)
+        
+        tabBarController?.tabBar.standardAppearance = appearance
+        tabBarController?.tabBar.scrollEdgeAppearance = appearance
+    }
+    
+    func renkDegistir(itemAppearance:UITabBarItemAppearance){
+        //seçili durum
+        itemAppearance.selected.iconColor = .green
+        itemAppearance.selected.titleTextAttributes = [.foregroundColor:UIColor.green]
+        itemAppearance.selected.badgeBackgroundColor = UIColor.black
+        //seçili olmayan durum
+        itemAppearance.normal.iconColor = .white
+        itemAppearance.normal.titleTextAttributes = [.foregroundColor:UIColor.white]
+        
     }
 
     @IBAction func profilArttir(_ sender: Any) {
