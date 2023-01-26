@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ButtonLabelTextfield" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merhaba" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgh-gU-Wbu">
+                                <rect key="frame" x="101.66666666666669" y="153" width="190" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yazınız" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pay-PS-n2J">
+                                <rect key="frame" x="30" y="307" width="333" height="45.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGF-Hz-5hL">
+                                <rect key="frame" x="154" y="452.66666666666669" width="85" height="50"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tıkla">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1TD-CG-soi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vgh-gU-Wbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ml-cq-sga"/>
+                            <constraint firstItem="vgh-gU-Wbu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="DJL-k7-K1U"/>
+                            <constraint firstItem="GGF-Hz-5hL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HeV-mp-zFI"/>
+                            <constraint firstItem="Pay-PS-n2J" firstAttribute="top" secondItem="vgh-gU-Wbu" secondAttribute="bottom" constant="94" id="RzS-r1-Lxp"/>
+                            <constraint firstItem="Pay-PS-n2J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="WTl-Q3-bgj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pay-PS-n2J" secondAttribute="trailing" constant="30" id="lXT-6Y-rHR"/>
+                            <constraint firstItem="Pay-PS-n2J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nOd-qu-ISI"/>
+                            <constraint firstItem="GGF-Hz-5hL" firstAttribute="top" secondItem="Pay-PS-n2J" secondAttribute="bottom" constant="100" id="yAD-qe-En5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="etiket" destination="vgh-gU-Wbu" id="4kE-zU-UNc"/>
+                        <outlet property="textfield" destination="Pay-PS-n2J" id="heQ-BD-P9n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
