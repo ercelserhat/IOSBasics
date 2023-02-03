@@ -35,6 +35,29 @@ class ViewController: UIViewController {
     }
     
     @IBAction func ozelAlertGoster(_ sender: Any) {
+        let alertController = UIAlertController(title: "Başlık", message: "Mesaj", preferredStyle: .alert)
+        
+        alertController.addTextField{ textfield in
+            textfield.placeholder = "Email"
+            textfield.keyboardType = .emailAddress
+        }
+        alertController.addTextField{ textfield in
+            textfield.placeholder = "Şifre"
+            textfield.isSecureTextEntry = true
+        }
+        
+        let kaydetAction = UIAlertAction(title: "Kaydet", style: .destructive){
+            action in
+            print("Kaydet Tıklandı.")
+            
+            let alinanEmail = (alertController.textFields![0] as UITextField).text!
+            let alinanSifre = (alertController.textFields![1] as UITextField).text!
+            
+            self.labelSonuc.text = "Email: \(alinanEmail) - Şifre: \(alinanSifre)"
+        }
+        
+        alertController.addAction(kaydetAction)
+        self.present(alertController, animated: true)
     }
     
     @IBAction func actionSheetGoster(_ sender: Any) {
