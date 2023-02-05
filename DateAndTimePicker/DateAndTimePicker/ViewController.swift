@@ -10,9 +10,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var saat: UITextField!
+    
     @IBOutlet weak var tarih: UITextField!
     
     var datePicker:UIDatePicker?
+    
+    var timePicker:UIDatePicker?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,12 @@ class ViewController: UIViewController {
         
         let dokunmaAlgilama = UITapGestureRecognizer(target: self, action: #selector(self.dokunmaAlgilamaMetod))
         view.addGestureRecognizer(dokunmaAlgilama)
+        
+        timePicker = UIDatePicker()
+        timePicker?.datePickerMode = .time
+        saat.inputView = timePicker
+        
+        timePicker?.addTarget(self, action: #selector(self.saatGoster(timepicker:)), for: .valueChanged)
     }
     
     @objc func tarihGoster(datepicker:UIDatePicker){
@@ -35,6 +44,14 @@ class ViewController: UIViewController {
         print(alinanTarih)
         tarih.text = alinanTarih
         //view.endEditing(true)
+    }
+    
+    @objc func saatGoster(timepicker:UIDatePicker){
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "hh:mm"
+        let alinanSaat = dateFormatter.string(from: timepicker.date)
+        print(alinanSaat)
+        saat.text = alinanSaat
     }
     
     @objc func dokunmaAlgilamaMetod(){
