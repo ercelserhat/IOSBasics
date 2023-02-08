@@ -27,6 +27,20 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         textFieldUlkeSec.inputView = pickerView
         
+        let toolBar = UIToolbar()
+        toolBar.tintColor = UIColor.red
+        toolBar.sizeToFit()
+        
+        let tamamButton = UIBarButtonItem(title: "Tamam", style: .plain, target: self, action: #selector(ViewController.tamamTikla))
+        
+        let boslukButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        let iptalButton = UIBarButtonItem(title: "İptal", style: .plain, target: self, action: #selector(self.iptalTikla))
+        
+        toolBar.setItems([iptalButton, boslukButton, tamamButton], animated: true)
+        
+        textFieldUlkeSec.inputAccessoryView = toolBar
+        
     }
     
     //Kaç sütun?
@@ -47,6 +61,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     //seçilen index
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         textFieldUlkeSec.text = ulkeler[row]
+    }
+    
+    @objc func tamamTikla(){
+        view.endEditing(true)
+    }
+    
+    @objc func iptalTikla(){
+        textFieldUlkeSec.text = ""
+        textFieldUlkeSec.placeholder = "Ülke Seç"
+        view.endEditing(true)
     }
 
 }
