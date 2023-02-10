@@ -44,5 +44,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print("Seçilen Ülke: \(ulkeler[indexPath.row])")
     }
     
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        
+        let silAction = UITableViewRowAction(style: .default, title: "Sil", handler: {
+            (action: UITableViewRowAction, indexPath: IndexPath) ->
+            Void in
+            print("\(self.ulkeler[indexPath.row])'yi sil.")
+        })
+        
+        let duzenleAction = UITableViewRowAction(style: .normal, title: "Düzenle", handler: {
+            (action: UITableViewRowAction, indexPath: IndexPath) ->
+            Void in
+            print("\(self.ulkeler[indexPath.row])'yi düzenle.")
+        })
+        
+        return [silAction, duzenleAction]
+        
+    }
 }
 
