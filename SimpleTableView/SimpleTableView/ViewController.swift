@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -22,6 +22,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
     }
     
+    
+}
+
+//Extension ile kullanımı
+extension ViewController:UITableViewDelegate, UITableViewDataSource{
     //Kaç bölüm
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -62,4 +67,3 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
         }
 }
-
