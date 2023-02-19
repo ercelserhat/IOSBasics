@@ -28,14 +28,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtI-Eb-d8c">
-                                                    <rect key="frame" x="161" y="27" width="71" height="36"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <rect key="frame" x="172.66666666666666" y="33" width="48" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" systemColor="systemRedColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PA-Ke-OrY">
+                                                    <rect key="frame" x="313.33333333333331" y="27" width="59.666666666666686" height="35"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Tıkla"/>
+                                                    <connections>
+                                                        <action selector="btnTikla:" destination="uJ6-9w-Lbp" eventType="touchUpInside" id="IRG-He-FNA"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="5PA-Ke-OrY" secondAttribute="bottom" constant="17" id="Acn-Op-Gmb"/>
+                                                <constraint firstItem="5PA-Ke-OrY" firstAttribute="top" secondItem="xUT-4r-NGN" secondAttribute="topMargin" constant="16" id="DMU-7C-vkK"/>
                                                 <constraint firstItem="MtI-Eb-d8c" firstAttribute="centerX" secondItem="xUT-4r-NGN" secondAttribute="centerX" id="cP3-7e-T8W"/>
+                                                <constraint firstItem="5PA-Ke-OrY" firstAttribute="trailing" secondItem="xUT-4r-NGN" secondAttribute="trailingMargin" id="hWw-27-dBG"/>
                                                 <constraint firstItem="MtI-Eb-d8c" firstAttribute="centerY" secondItem="xUT-4r-NGN" secondAttribute="centerY" id="sKf-ah-UYb"/>
                                             </constraints>
                                         </tableViewCellContentView>
