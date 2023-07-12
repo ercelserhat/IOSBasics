@@ -11,11 +11,19 @@ import CoreData
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
 class ViewController: UIViewController {
+    
+    let context = appDelegate.persistentContainer.viewContext
 
     override func viewDidLoad() {
-        
-        let context = appDelegate.persistentContainer.viewContext
-        
         super.viewDidLoad()
+    }
+    
+    //CoreData - Save Data
+    func veriKaydet(){
+        let kisi = Kisiler(context: context)
+        kisi.kisi_ad = "Serhat"
+        kisi.kisi_yas = 31
+        
+        appDelegate.saveContext()
     }
 }
