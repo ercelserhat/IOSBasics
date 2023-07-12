@@ -20,13 +20,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         veriKaydet()
         veriOkuma()
+        veriSil()
+        veriOkuma()
     }
     
     //CoreData - Save Data
     func veriKaydet(){
         let kisi = Kisiler(context: context)
-        kisi.kisi_ad = "Serhat"
-        kisi.kisi_yas = 31
+        kisi.kisi_ad = "Serap"
+        kisi.kisi_yas = 23
         
         appDelegate.saveContext()
     }
@@ -42,5 +44,12 @@ class ViewController: UIViewController {
         for kisi  in kisilerListe{
             print("Ad: \(kisi.kisi_ad!) - Yaş: \(kisi.kisi_yas)")
         }
+    }
+    
+    //CoreData - Delete Data
+    func veriSil(){
+        let kisi = kisilerListe[1]
+        context.delete(kisi)
+        appDelegate.saveContext()
     }
 }
