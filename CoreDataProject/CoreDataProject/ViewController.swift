@@ -23,7 +23,8 @@ class ViewController: UIViewController {
         //veriSil()
         //veriGuncelle()
         //veriOkuma()
-        veriOkumaSiralama()
+        //veriOkumaSiralama()
+        veriOkumaFiltreleme()
     }
     
     //CoreData - Save Data
@@ -69,6 +70,21 @@ class ViewController: UIViewController {
         let fetchRequest: NSFetchRequest<Kisiler> = Kisiler.fetchRequest()
         let sort = NSSortDescriptor(key: #keyPath(Kisiler.kisi_yas), ascending: true)
         fetchRequest.sortDescriptors = [sort]
+        do{
+            kisilerListe = try context.fetch(fetchRequest)
+        }catch{
+            print("Veri okunurken hata oluştu.")
+        }
+        
+        for kisi  in kisilerListe{
+            print("Ad: \(kisi.kisi_ad!) - Yaş: \(kisi.kisi_yas)")
+        }
+    }
+    
+    //Filtering (Predicate)
+    func veriOkumaFiltreleme(){
+        let fetchRequest: NSFetchRequest<Kisiler> = Kisiler.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "kisi_yas == %i", 23)
         do{
             kisilerListe = try context.fetch(fetchRequest)
         }catch{
