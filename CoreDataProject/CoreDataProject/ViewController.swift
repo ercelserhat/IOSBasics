@@ -18,9 +18,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        veriKaydet()
+        //veriKaydet()
         veriOkuma()
-        veriSil()
+        //veriSil()
+        veriGuncelle()
         veriOkuma()
     }
     
@@ -50,6 +51,14 @@ class ViewController: UIViewController {
     func veriSil(){
         let kisi = kisilerListe[1]
         context.delete(kisi)
+        appDelegate.saveContext()
+    }
+    
+    //CoreData - Update
+    func veriGuncelle(){
+        let kisi = kisilerListe[1]
+        kisi.kisi_ad = "YENİ KİŞİ"
+        kisi.kisi_yas = 99
         appDelegate.saveContext()
     }
 }
