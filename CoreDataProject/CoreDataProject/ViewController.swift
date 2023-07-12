@@ -13,9 +13,13 @@ let appDelegate = UIApplication.shared.delegate as! AppDelegate
 class ViewController: UIViewController {
     
     let context = appDelegate.persistentContainer.viewContext
+    
+    var kisilerListe = [Kisiler]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        veriKaydet()
+        veriOkuma()
     }
     
     //CoreData - Save Data
@@ -25,5 +29,18 @@ class ViewController: UIViewController {
         kisi.kisi_yas = 31
         
         appDelegate.saveContext()
+    }
+    
+    //CoreData - Read Data
+    func veriOkuma(){
+        do{
+            kisilerListe = try context.fetch(Kisiler.fetchRequest())
+        }catch{
+            print("Veri okunurken hata oluştu.")
+        }
+        
+        for kisi  in kisilerListe{
+            print("Ad: \(kisi.kisi_ad!) - Yaş: \(kisi.kisi_yas)")
+        }
     }
 }
