@@ -19,10 +19,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //veriKaydet()
-        veriOkuma()
+        //veriOkuma()
         //veriSil()
-        veriGuncelle()
-        veriOkuma()
+        //veriGuncelle()
+        //veriOkuma()
+        veriOkumaSiralama()
     }
     
     //CoreData - Save Data
@@ -60,5 +61,22 @@ class ViewController: UIViewController {
         kisi.kisi_ad = "YENİ KİŞİ"
         kisi.kisi_yas = 99
         appDelegate.saveContext()
+    }
+    
+    //Sorting
+    func veriOkumaSiralama(){
+        
+        let fetchRequest: NSFetchRequest<Kisiler> = Kisiler.fetchRequest()
+        let sort = NSSortDescriptor(key: #keyPath(Kisiler.kisi_yas), ascending: true)
+        fetchRequest.sortDescriptors = [sort]
+        do{
+            kisilerListe = try context.fetch(fetchRequest)
+        }catch{
+            print("Veri okunurken hata oluştu.")
+        }
+        
+        for kisi  in kisilerListe{
+            print("Ad: \(kisi.kisi_ad!) - Yaş: \(kisi.kisi_yas)")
+        }
     }
 }
