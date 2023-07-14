@@ -16,10 +16,17 @@ class ViewController: UIViewController {
         //Kisilerdao().kisiEkle(kisi_ad: "Mehmet", kisi_yas: 35)
         //Kisilerdao().kisiSil(kisi_id: 2)
         //Kisilerdao().kisiGuncelle(kisi_id: 3, kisi_ad: "Ahmet", kisi_yas: 30)
-        let sonuc = Kisilerdao().kisiKontrol(kisi_ad: "Ahmet")
-        print("Sonuç: \(sonuc)")
+        //let sonuc = Kisilerdao().kisiKontrol(kisi_ad: "Ahmet")
+        //print("Sonuç: \(sonuc)")
+        
         let gelenListe = Kisilerdao().tumKisileriAl()
         for k in gelenListe{
+            print("ID: \(k.kisi_id), AD: \(k.kisi_ad), YAŞ: \(k.kisi_yas)")
+        }
+        
+        print("Arama Sonucu:")
+        let aramaSonucu = Kisilerdao().aramaYap(kisi_ad: "hat")
+        for k in aramaSonucu{
             print("ID: \(k.kisi_id), AD: \(k.kisi_ad), YAŞ: \(k.kisi_yas)")
         }
     }
