@@ -18,6 +18,7 @@
 		7AC8CF882A61724D0031DA27 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8CF7F2A61724D0031DA27 /* FMDatabaseQueue.m */; };
 		7AC8CF892A61724D0031DA27 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8CF812A61724D0031DA27 /* FMDatabase.m */; };
 		7AC8CF8A2A61724D0031DA27 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8CF822A61724D0031DA27 /* FMDatabaseAdditions.m */; };
+		7AC8CF8C2A6173D10031DA27 /* kisilergiris.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7AC8CF8B2A6173D10031DA27 /* kisilergiris.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		7AC8CF832A61724D0031DA27 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
 		7AC8CF842A61724D0031DA27 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		7AC8CF852A61724D0031DA27 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		7AC8CF8B2A6173D10031DA27 /* kisilergiris.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = kisilergiris.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		7AC8CF632A61713B0031DA27 /* SQLite */ = {
 			isa = PBXGroup;
 			children = (
+				7AC8CF8B2A6173D10031DA27 /* kisilergiris.sqlite */,
 				7AC8CF642A61713B0031DA27 /* AppDelegate.swift */,
 				7AC8CF662A61713B0031DA27 /* SceneDelegate.swift */,
 				7AC8CF682A61713B0031DA27 /* ViewController.swift */,
@@ -165,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AC8CF8C2A6173D10031DA27 /* kisilergiris.sqlite in Resources */,
 				7AC8CF712A61713C0031DA27 /* LaunchScreen.storyboard in Resources */,
 				7AC8CF6E2A61713C0031DA27 /* Assets.xcassets in Resources */,
 				7AC8CF6C2A61713B0031DA27 /* Main.storyboard in Resources */,
