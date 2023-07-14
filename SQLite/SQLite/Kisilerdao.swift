@@ -43,4 +43,16 @@ class Kisilerdao{
         db?.close()
         return liste
     }
+    
+    func kisiSil(kisi_id: Int){
+        db?.open()
+        
+        do{
+            try db!.executeUpdate("DELETE FROM kisiler WHERE kisi_id = ?", values: [kisi_id])
+        }catch{
+            print(error.localizedDescription)
+        }
+        
+        db?.close()
+    }
 }

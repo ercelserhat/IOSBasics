@@ -12,6 +12,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         veritabaniKopyala()
+        
+        Kisilerdao().kisiEkle(kisi_ad: "Ahmet", kisi_yas: 20)
+        let gelenListe = Kisilerdao().tumKisileriAl()
+        for k in gelenListe{
+            print("ID: \(k.kisi_id), AD: \(k.kisi_ad), YAŞ: \(k.kisi_yas)")
+        }
     }
     
     func veritabaniKopyala(){
