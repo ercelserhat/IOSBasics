@@ -55,4 +55,16 @@ class Kisilerdao{
         
         db?.close()
     }
+    
+    func kisiGuncelle(kisi_id: Int, kisi_ad: String, kisi_yas: Int){
+        db?.open()
+        
+        do{
+            try db!.executeUpdate("UPDATE kisiler SET kisi_ad = ?, kisi_yas = ? WHERE kisi_id = ?", values: [kisi_ad, kisi_yas, kisi_id])
+        }catch{
+            print(error.localizedDescription)
+        }
+        
+        db?.close()
+    }
 }
