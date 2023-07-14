@@ -19,6 +19,9 @@ class ViewController: UIViewController {
         //let sonuc = Kisilerdao().kisiKontrol(kisi_ad: "Ahmet")
         //print("Sonuç: \(sonuc)")
         
+        let kisi = Kisilerdao().tekKisiGetir(kisi_id: 1)
+        print("Gelen kişi: \(kisi.kisi_ad)")
+        
         let gelenListe = Kisilerdao().tumKisileriAl()
         for k in gelenListe{
             print("ID: \(k.kisi_id), AD: \(k.kisi_ad), YAŞ: \(k.kisi_yas)")

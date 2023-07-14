@@ -98,4 +98,21 @@ class Kisilerdao{
         db?.close()
         return liste
     }
+    
+    func tekKisiGetir(kisi_id: Int) -> Kisiler{
+        var kisi: Kisiler?
+        db?.open()
+        do{
+            let rs = try db!.executeQuery("SELECT * FROM kisiler WHERE kisi_id = ?", values: [kisi_id])
+            while rs.next(){
+                kisi = Kisiler(kisi_id: Int(rs.string(forColumn: "kisi_id")!)!, kisi_ad: rs.string(forColumn: "kisi_ad")!, kisi_yas: Int(rs.string(forColumn: "kisi_yas")!)!)
+            }
+        }catch{
+            print(error.localizedDescription)
+        }
+        db?.close()
+        return kisi!
+    }
+    
+    
 }
