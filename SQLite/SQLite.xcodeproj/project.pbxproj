@@ -19,6 +19,8 @@
 		7AC8CF892A61724D0031DA27 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8CF812A61724D0031DA27 /* FMDatabase.m */; };
 		7AC8CF8A2A61724D0031DA27 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8CF822A61724D0031DA27 /* FMDatabaseAdditions.m */; };
 		7AC8CF8C2A6173D10031DA27 /* kisilergiris.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7AC8CF8B2A6173D10031DA27 /* kisilergiris.sqlite */; };
+		7AC8CF8E2A617AAA0031DA27 /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8CF8D2A617AAA0031DA27 /* Kisiler.swift */; };
+		7AC8CF902A617AE70031DA27 /* Kisilerdao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8CF8F2A617AE70031DA27 /* Kisilerdao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		7AC8CF842A61724D0031DA27 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		7AC8CF852A61724D0031DA27 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		7AC8CF8B2A6173D10031DA27 /* kisilergiris.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = kisilergiris.sqlite; sourceTree = "<group>"; };
+		7AC8CF8D2A617AAA0031DA27 /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
+		7AC8CF8F2A617AE70031DA27 /* Kisilerdao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisilerdao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 				7AC8CF852A61724D0031DA27 /* FMResultSet.h */,
 				7AC8CF7E2A61724C0031DA27 /* FMResultSet.m */,
 				7AC8CF7A2A61724C0031DA27 /* SQLite-Bridging-Header.h */,
+				7AC8CF8D2A617AAA0031DA27 /* Kisiler.swift */,
+				7AC8CF8F2A617AE70031DA27 /* Kisilerdao.swift */,
 			);
 			path = SQLite;
 			sourceTree = "<group>";
@@ -190,6 +196,8 @@
 				7AC8CF872A61724D0031DA27 /* FMResultSet.m in Sources */,
 				7AC8CF882A61724D0031DA27 /* FMDatabaseQueue.m in Sources */,
 				7AC8CF8A2A61724D0031DA27 /* FMDatabaseAdditions.m in Sources */,
+				7AC8CF902A617AE70031DA27 /* Kisilerdao.swift in Sources */,
+				7AC8CF8E2A617AAA0031DA27 /* Kisiler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
