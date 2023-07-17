@@ -97,6 +97,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="BUTON A">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonAtikla:" destination="2oZ-3S-wyR" eventType="touchUpInside" id="JBG-bl-LP7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSI-IX-ezZ">
                                 <rect key="frame" x="50" y="544" width="293" height="50"/>
@@ -108,6 +111,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="BUTON B">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonBtikla:" destination="2oZ-3S-wyR" eventType="touchUpInside" id="RMD-xM-jjw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aU-6a-xwx">
                                 <rect key="frame" x="50" y="614" width="293" height="50"/>
@@ -119,6 +125,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="BUTON C">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonCtikla:" destination="2oZ-3S-wyR" eventType="touchUpInside" id="34c-sd-aMm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZp-Xo-07u">
                                 <rect key="frame" x="50" y="684" width="293" height="50"/>
@@ -130,6 +139,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="BUTON D">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonDtikla:" destination="2oZ-3S-wyR" eventType="touchUpInside" id="z6w-8U-RtS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cP0-YJ-Pfy"/>
@@ -163,6 +175,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Quiz" id="ggn-Vs-HGs"/>
                     <connections>
+                        <outlet property="buttonA" destination="zmO-HJ-W82" id="8hT-uu-kwd"/>
+                        <outlet property="buttonB" destination="LSI-IX-ezZ" id="yyL-Dy-ykO"/>
+                        <outlet property="buttonC" destination="5aU-6a-xwx" id="pL6-Lk-QES"/>
+                        <outlet property="buttonD" destination="KZp-Xo-07u" id="Jat-y8-dTz"/>
+                        <outlet property="imageViewBayrak" destination="KzB-PI-E0H" id="LJG-l6-cWJ"/>
+                        <outlet property="labelDogru" destination="uRB-RQ-ngh" id="3Px-8J-r3x"/>
+                        <outlet property="labelSoruSayisi" destination="gRb-Je-NcN" id="q7P-MJ-aMk"/>
+                        <outlet property="labelYanlis" destination="VTv-7B-jE7" id="DFG-I8-btS"/>
                         <segue destination="OWp-Pp-cLd" kind="show" identifier="toSonucEkrani" id="G3k-RX-U7w"/>
                     </connections>
                 </viewController>
@@ -200,6 +220,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="TEKRAR OYNA">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tekrarDene:" destination="OWp-Pp-cLd" eventType="touchUpInside" id="gUp-CS-gmu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1RM-Sy-9pR"/>
@@ -216,6 +239,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sonuç" id="tHX-EX-lBa"/>
+                    <connections>
+                        <outlet property="labelSonuc" destination="aEc-Rf-a6t" id="ZYG-Gm-aTb"/>
+                        <outlet property="labelYuzde" destination="41H-5C-cyH" id="QV1-Ss-skx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="umQ-6x-h7P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
