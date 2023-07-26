@@ -14,7 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         //tumKisiler()
         //aramaYap()
-        kisiSil()
+        //kisiSil()
+        kisiEkle()
     }
     
     func tumKisiler(){
@@ -61,6 +62,20 @@ class ViewController: UIViewController {
     func kisiSil(){
         let params: Parameters = ["kisi_id":15148]
         AF.request("http://kasimadalan.pe.hu/kisiler/delete_kisiler.php", method: .post, parameters: params).response{ response in
+            if let data = response.data{
+                do{
+                    let cevap = try JSONSerialization.jsonObject(with: data)
+                    print(cevap)
+                }catch{
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+    
+    func kisiEkle(){
+        let params: Parameters = ["kisi_ad" : "Serhat", "kisi_tel" : "05123123123"]
+        AF.request("http://kasimadalan.pe.hu/kisiler/insert_kisiler.php", method: .post, parameters: params).response{ response in
             if let data = response.data{
                 do{
                     let cevap = try JSONSerialization.jsonObject(with: data)
