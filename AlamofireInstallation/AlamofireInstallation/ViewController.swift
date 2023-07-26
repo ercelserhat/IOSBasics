@@ -15,7 +15,8 @@ class ViewController: UIViewController {
         //tumKisiler()
         //aramaYap()
         //kisiSil()
-        kisiEkle()
+        //kisiEkle()
+        kisiGuncelle()
     }
     
     func tumKisiler(){
@@ -76,6 +77,20 @@ class ViewController: UIViewController {
     func kisiEkle(){
         let params: Parameters = ["kisi_ad" : "Serhat", "kisi_tel" : "05123123123"]
         AF.request("http://kasimadalan.pe.hu/kisiler/insert_kisiler.php", method: .post, parameters: params).response{ response in
+            if let data = response.data{
+                do{
+                    let cevap = try JSONSerialization.jsonObject(with: data)
+                    print(cevap)
+                }catch{
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+    
+    func kisiGuncelle(){
+        let params: Parameters = ["kisi_id" : 15150, "kisi_ad" : "SERHATXXX", "kisi_tel" : "000000000000000000"]
+        AF.request("http://kasimadalan.pe.hu/kisiler/update_kisiler.php", method: .post, parameters: params).response{ response in
             if let data = response.data{
                 do{
                     let cevap = try JSONSerialization.jsonObject(with: data)
