@@ -14,8 +14,8 @@ class ViewController: UIViewController {
         //kisiEkle()
         //kisiSil()
         //kisiGuncelle()
-        //tumKisiler()
-        aramaYap()
+        tumKisiler()
+        //aramaYap()
     }
 
     func kisiEkle(){
@@ -87,7 +87,13 @@ class ViewController: UIViewController {
             }
             do{
                 if let json = try JSONSerialization.jsonObject(with: data!) as? [String : Any]{
-                    print(json)
+                    if let kisiler = json["kisiler"] as? [[String : Any]]{
+                        for kisi in kisiler{
+                            print("Kisi id: \(kisi["kisi_id"]!)")
+                            print("Kisi adı: \(kisi["kisi_ad"]!)")
+                            print("Kisi tel: \(kisi["kisi_tel"]!)")
+                        }
+                    }
                 }
             }catch{
                 print(error.localizedDescription)
