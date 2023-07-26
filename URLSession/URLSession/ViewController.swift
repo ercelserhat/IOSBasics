@@ -13,7 +13,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         //kisiEkle()
         //kisiSil()
-        kisiGuncelle()
+        //kisiGuncelle()
+        //tumKisiler()
+        aramaYap()
     }
 
     func kisiEkle(){
@@ -68,6 +70,43 @@ class ViewController: UIViewController {
             }
             do{
                 if let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String : Any]{
+                    print(json)
+                }
+            }catch{
+                print(error.localizedDescription)
+            }
+        }.resume()
+    }
+    
+    func tumKisiler(){
+        let url = URL(string: "http://kasimadalan.pe.hu/kisiler/tum_kisiler.php")!
+        URLSession.shared.dataTask(with: url){ (data, response, error) in
+            if error != nil || data == nil{
+                print("Hata")
+                return
+            }
+            do{
+                if let json = try JSONSerialization.jsonObject(with: data!) as? [String : Any]{
+                    print(json)
+                }
+            }catch{
+                print(error.localizedDescription)
+            }
+        }.resume()
+    }
+    
+    func aramaYap(){
+        var request = URLRequest(url: URL(string: "http://kasimadalan.pe.hu/kisiler/tum_kisiler_arama.php")!)
+        request.httpMethod = "POST"
+        let postString = "kisi_ad=TEST"
+        request.httpBody = postString.data(using: .utf8)
+        URLSession.shared.dataTask(with: request){ (data, response, error) in
+            if error != nil || data == nil{
+                print("Hata")
+                return
+            }
+            do{
+                if let json = try JSONSerialization.jsonObject(with: data!) as? [String : Any]{
                     print(json)
                 }
             }catch{
