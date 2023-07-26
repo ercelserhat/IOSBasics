@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //tumKisiler()
-        aramaYap()
+        //aramaYap()
+        kisiSil()
     }
     
     func tumKisiler(){
@@ -50,6 +51,20 @@ class ViewController: UIViewController {
                             print("Kişi tel: \(k.kisi_tel)")
                         }
                     }
+                }catch{
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+    
+    func kisiSil(){
+        let params: Parameters = ["kisi_id":15148]
+        AF.request("http://kasimadalan.pe.hu/kisiler/delete_kisiler.php", method: .post, parameters: params).response{ response in
+            if let data = response.data{
+                do{
+                    let cevap = try JSONSerialization.jsonObject(with: data)
+                    print(cevap)
                 }catch{
                     print(error.localizedDescription)
                 }
