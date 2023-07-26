@@ -12,7 +12,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //kisiEkle()
-        kisiSil()
+        //kisiSil()
+        kisiGuncelle()
     }
 
     func kisiEkle(){
@@ -39,6 +40,26 @@ class ViewController: UIViewController {
         var request = URLRequest(url: URL(string: "http://kasimadalan.pe.hu/kisiler/delete_kisiler.php")!)
         request.httpMethod = "POST"
         let postString = "kisi_id=15149"
+        request.httpBody = postString.data(using: .utf8)
+        URLSession.shared.dataTask(with: request){ (data, response, error) in
+            if error != nil || data == nil{
+                print("Hata")
+                return
+            }
+            do{
+                if let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String : Any]{
+                    print(json)
+                }
+            }catch{
+                print(error.localizedDescription)
+            }
+        }.resume()
+    }
+    
+    func kisiGuncelle(){
+        var request = URLRequest(url: URL(string: "http://kasimadalan.pe.hu/kisiler/update_kisiler.php")!)
+        request.httpMethod = "POST"
+        let postString = "kisi_id=15148&kisi_ad=TESTTESTTEST&kisi_tel=0000000000000"
         request.httpBody = postString.data(using: .utf8)
         URLSession.shared.dataTask(with: request){ (data, response, error) in
             if error != nil || data == nil{
