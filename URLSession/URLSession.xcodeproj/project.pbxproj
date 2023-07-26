@@ -13,6 +13,8 @@
 		7ACCC8EA2A70FA89009C603B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACCC8E82A70FA89009C603B /* Main.storyboard */; };
 		7ACCC8EC2A70FA8A009C603B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ACCC8EB2A70FA8A009C603B /* Assets.xcassets */; };
 		7ACCC8EF2A70FA8A009C603B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACCC8ED2A70FA8A009C603B /* LaunchScreen.storyboard */; };
+		7ACCC8F72A711295009C603B /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC8F62A711295009C603B /* Kisiler.swift */; };
+		7ACCC8F92A711307009C603B /* KisiCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACCC8F82A711307009C603B /* KisiCevap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7ACCC8EB2A70FA8A009C603B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ACCC8EE2A70FA8A009C603B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ACCC8F02A70FA8A009C603B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ACCC8F62A711295009C603B /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
+		7ACCC8F82A711307009C603B /* KisiCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiCevap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				7ACCC8EB2A70FA8A009C603B /* Assets.xcassets */,
 				7ACCC8ED2A70FA8A009C603B /* LaunchScreen.storyboard */,
 				7ACCC8F02A70FA8A009C603B /* Info.plist */,
+				7ACCC8F62A711295009C603B /* Kisiler.swift */,
+				7ACCC8F82A711307009C603B /* KisiCevap.swift */,
 			);
 			path = URLSession;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				7ACCC8E72A70FA89009C603B /* ViewController.swift in Sources */,
 				7ACCC8E32A70FA89009C603B /* AppDelegate.swift in Sources */,
 				7ACCC8E52A70FA89009C603B /* SceneDelegate.swift in Sources */,
+				7ACCC8F72A711295009C603B /* Kisiler.swift in Sources */,
+				7ACCC8F92A711307009C603B /* KisiCevap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

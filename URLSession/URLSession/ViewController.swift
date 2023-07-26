@@ -86,14 +86,11 @@ class ViewController: UIViewController {
                 return
             }
             do{
-                if let json = try JSONSerialization.jsonObject(with: data!) as? [String : Any]{
-                    if let kisiler = json["kisiler"] as? [[String : Any]]{
-                        for kisi in kisiler{
-                            print("Kisi id: \(kisi["kisi_id"]!)")
-                            print("Kisi adı: \(kisi["kisi_ad"]!)")
-                            print("Kisi tel: \(kisi["kisi_tel"]!)")
-                        }
-                    }
+                let cevap = try JSONDecoder().decode(KisiCevap.self, from: data!)
+                for kisi in cevap.kisiler!{
+                    print("Kişi id: \(kisi.kisi_id)")
+                    print("Kişi ad: \(kisi.kisi_ad)")
+                    print("Kişi tel: \(kisi.kisi_tel)")
                 }
             }catch{
                 print(error.localizedDescription)
