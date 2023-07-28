@@ -16,7 +16,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         ref = Database.database().reference()
         //kisiEkle()
-        kisiSil()
+        //kisiSil()
+        kisiGuncelle()
     }
     
     func kisiEkle(){
@@ -28,6 +29,11 @@ class ViewController: UIViewController {
     
     func kisiSil(){
         ref?.child("kisiler").child("-NaO7Fxs1Zc9YugvW1w0").removeValue()
+    }
+    
+    func kisiGuncelle(){
+        let dict: [String : Any] = ["kisi_ad" : "YENİ AD", "kisi_yas" : 50]
+        ref?.child("kisiler").child("-NaO72sDE3QVq76HREMC").updateChildValues(dict)
     }
 }
 
