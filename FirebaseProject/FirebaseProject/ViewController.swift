@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
-        kisiEkle()
+        //kisiEkle()
+        kisiSil()
     }
     
     func kisiEkle(){
@@ -23,6 +24,10 @@ class ViewController: UIViewController {
         let dict: [String : Any] = ["kisi_ad" : yeniKisi.kisi_ad, "kisi_yas" : yeniKisi.kisi_yas]
         let newRef = ref?.child("kisiler").childByAutoId()
         newRef?.setValue(dict)
+    }
+    
+    func kisiSil(){
+        ref?.child("kisiler").child("-NaO7Fxs1Zc9YugvW1w0").removeValue()
     }
 }
 
