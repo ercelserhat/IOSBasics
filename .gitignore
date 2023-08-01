@@ -1,4 +1,5 @@
 GoogleService-Info.plist
 .DS_Store
+*.DS_Store
 xcshememanagement.plist
 UserInterfaceState.xcuserstate
