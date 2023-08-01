@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapKit_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7nZ-NF-Ag7">
+                                <rect key="frame" x="0.0" y="59" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2da-sS-LsI"/>
+                                </connections>
+                            </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jy3-PL-kxc">
+                                <rect key="frame" x="0.0" y="115" width="393" height="703"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jy3-PL-kxc" secondAttribute="trailing" id="8yI-cj-t8k"/>
+                            <constraint firstItem="7nZ-NF-Ag7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9lu-R9-FJm"/>
+                            <constraint firstItem="7nZ-NF-Ag7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EQH-M8-tCi"/>
+                            <constraint firstItem="7nZ-NF-Ag7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GHS-WG-4uY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jy3-PL-kxc" secondAttribute="bottom" id="dDK-cD-8ud"/>
+                            <constraint firstItem="jy3-PL-kxc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rha-df-zme"/>
+                            <constraint firstItem="jy3-PL-kxc" firstAttribute="top" secondItem="7nZ-NF-Ag7" secondAttribute="bottom" id="zhN-Aj-sod"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aramaBar" destination="7nZ-NF-Ag7" id="D50-iV-47e"/>
+                        <outlet property="mapView" destination="jy3-PL-kxc" id="mjy-UC-Nmv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
