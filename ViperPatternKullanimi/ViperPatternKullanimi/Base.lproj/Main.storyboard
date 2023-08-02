@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViperPatternKullanimi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6n-M8-n9W">
+                                <rect key="frame" x="161" y="129" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gM9-eU-kUr">
+                                <rect key="frame" x="30" y="215" width="333" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDW-O2-1Vz">
+                                <rect key="frame" x="30.000000000000007" y="323" width="102.66666666666669" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TOPLAMA"/>
+                                <connections>
+                                    <action selector="btnToplama:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JB0-7r-GoV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOF-8u-kl9">
+                                <rect key="frame" x="270" y="323" width="93" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ÇARPMA"/>
+                                <connections>
+                                    <action selector="btnCarpma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N3s-vH-cig"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sO7-73-0Nh">
+                                <rect key="frame" x="30" y="269" width="333" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m6n-M8-n9W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="4eP-y3-ULQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sO7-73-0Nh" secondAttribute="trailing" constant="30" id="5Hj-QS-ElQ"/>
+                            <constraint firstItem="sO7-73-0Nh" firstAttribute="top" secondItem="gM9-eU-kUr" secondAttribute="bottom" constant="20" id="6JR-aX-OQh"/>
+                            <constraint firstItem="m6n-M8-n9W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ej-Gp-ZCe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZOF-8u-kl9" secondAttribute="trailing" constant="30" id="9Yu-E1-f3h"/>
+                            <constraint firstItem="ZOF-8u-kl9" firstAttribute="top" secondItem="sO7-73-0Nh" secondAttribute="bottom" constant="20" id="ERJ-1v-4JI"/>
+                            <constraint firstItem="sO7-73-0Nh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Hj8-VM-bhX"/>
+                            <constraint firstItem="KDW-O2-1Vz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="N3L-2K-9iF"/>
+                            <constraint firstItem="KDW-O2-1Vz" firstAttribute="top" secondItem="sO7-73-0Nh" secondAttribute="bottom" constant="20" id="TQx-rm-UVP"/>
+                            <constraint firstItem="gM9-eU-kUr" firstAttribute="top" secondItem="m6n-M8-n9W" secondAttribute="bottom" constant="50" id="a7x-JX-HFy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gM9-eU-kUr" secondAttribute="trailing" constant="30" id="ckz-q6-aCv"/>
+                            <constraint firstItem="gM9-eU-kUr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="goh-BZ-HKU"/>
+                            <constraint firstItem="gM9-eU-kUr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nCB-WC-g2o"/>
+                            <constraint firstItem="sO7-73-0Nh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qcH-GS-ks7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelSonuc" destination="m6n-M8-n9W" id="QRX-Z7-YD5"/>
+                        <outlet property="textFieldSayi1" destination="gM9-eU-kUr" id="qu9-TS-iRj"/>
+                        <outlet property="textFieldSayi2" destination="sO7-73-0Nh" id="cHH-ms-ZzT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
