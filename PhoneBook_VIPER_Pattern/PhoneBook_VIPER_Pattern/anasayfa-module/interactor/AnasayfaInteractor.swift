@@ -10,20 +10,53 @@ import Foundation
 class AnasayfaInteractor: PresenterToInteractorAnasayfaProtocol{
     var anasayfaPresenter: InteractorToPresenterAnasayfaProtocol?
     
+    let db: FMDatabase?
+    init(){
+        let hedefYol = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let veritabaniURL = URL(fileURLWithPath: hedefYol).appendingPathComponent("rehber.sqlite")
+        db = FMDatabase(path: veritabaniURL.path)
+    }
+    
     func tumKisileriAl() {
         var liste = [Kisiler]()
-        let k1 = Kisiler(kisi_id: 1, kisi_ad: "Serhat", kisi_tel: "11111")
-        let k2 = Kisiler(kisi_id: 2, kisi_ad: "Serap", kisi_tel: "222")
-        liste.append(k1)
-        liste.append(k2)
-        anasayfaPresenter?.presenteraVeriGonder(kisilerListesi: liste)
+        db?.open()
+        do{
+            let rs = try db!.executeQuery("SELECT * FROM kisiler", values: nil)
+            while rs.next(){
+                let kisi = Kisiler(kisi_id: Int(rs.string(forColumn: "kisi_id")!)!, kisi_ad: rs.string(forColumn: "kisi_ad")!, kisi_tel: rs.string(forColumn: "kisi_tel")!)
+                liste.append(kisi)
+            }
+            anasayfaPresenter?.presenteraVeriGonder(kisilerListesi: liste)
+        }catch{
+            print(error.localizedDescription)
+        }
+        db?.close()
     }
     
     func kisiAra(aramaKelimesi: String) {
-        print("Arama Sonucu: \(aramaKelimesi)")
+        var liste = [Kisiler]()
+        db?.open()
+        do{
+            let rs = try db!.executeQuery("SELECT * FROM kisiler WHERE kisi_ad like '%\(aramaKelimesi)%'", values: nil)
+            while rs.next(){
+                let kisi = Kisiler(kisi_id: Int(rs.string(forColumn: "kisi_id")!)!, kisi_ad: rs.string(forColumn: "kisi_ad")!, kisi_tel: rs.string(forColumn: "kisi_tel")!)
+                liste.append(kisi)
+            }
+            anasayfaPresenter?.presenteraVeriGonder(kisilerListesi: liste)
+        }catch{
+            print(error.localizedDescription)
+        }
+        db?.close()
     }
     
     func kisiSil(kisi_id: Int) {
-        print("\(kisi_id) silindi!")
+        db?.open()
+        do{
+            try db!.executeUpdate("DELETE FROM kisiler WHERE kisi_id = ?", values: [kisi_id])
+            tumKisileriAl()
+        }catch{
+            print(error.localizedDescription)
+        }
+        db?.close()
     }
 }

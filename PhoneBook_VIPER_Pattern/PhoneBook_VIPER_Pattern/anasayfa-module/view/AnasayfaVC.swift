@@ -22,12 +22,30 @@ class AnasayfaVC: UIViewController {
         searchBar.delegate = self
         kisilerTableView.delegate = self
         kisilerTableView.dataSource = self
+        
+        veritabaniKopyala()
     
         AnasayfaRouter.createModule(ref: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         anasayfaPresenterNesnesi?.kisileriYukle()
+    }
+    
+    func veritabaniKopyala(){
+        let bundleYolu = Bundle.main.path(forResource: "rehber", ofType: ".sqlite")
+        let hedefYol = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let fileManager = FileManager.default
+        let kopyalanacakYer = URL(fileURLWithPath: hedefYol).appendingPathComponent("rehber.sqlite")
+        if fileManager.fileExists(atPath: kopyalanacakYer.path){
+            print("Veritabanı mevcut.")
+        }else{
+            do {
+                try fileManager.copyItem(atPath: bundleYolu!, toPath: kopyalanacakYer.path)
+            } catch {
+                print("Hata")
+            }
+        }
     }
 }
 
