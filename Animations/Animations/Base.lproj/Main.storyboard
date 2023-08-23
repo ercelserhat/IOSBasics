@@ -34,15 +34,29 @@
                                     <action selector="alphaAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KAL-iX-a3l"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAd-oE-3nm">
+                                <rect key="frame" x="80" y="313" width="233" height="35"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Scale">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="scaleAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RqT-5h-fml"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8pi-f6-nk2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="BBv-6z-uHe"/>
+                            <constraint firstItem="WAd-oE-3nm" firstAttribute="top" secondItem="TBv-b8-aZE" secondAttribute="bottom" constant="25" id="J3a-38-6px"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TBv-b8-aZE" secondAttribute="trailing" constant="80" id="NpJ-hy-l69"/>
                             <constraint firstItem="TBv-b8-aZE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="RX0-ut-jDR"/>
+                            <constraint firstItem="WAd-oE-3nm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="Xye-T7-5Fx"/>
                             <constraint firstItem="TBv-b8-aZE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dbv-5F-Hkh"/>
                             <constraint firstItem="TBv-b8-aZE" firstAttribute="top" secondItem="8pi-f6-nk2" secondAttribute="bottom" constant="80" id="jOl-5S-vMa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WAd-oE-3nm" secondAttribute="trailing" constant="80" id="mzO-L6-SU1"/>
                             <constraint firstItem="8pi-f6-nk2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="onB-ii-NXt"/>
                         </constraints>
                     </view>

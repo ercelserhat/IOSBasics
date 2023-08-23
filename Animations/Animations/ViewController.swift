@@ -21,4 +21,11 @@ class ViewController: UIViewController {
             self.animationLabel.alpha = 0
         }, completion: nil)
     }
+    
+    @IBAction func scaleAnimation(_ sender: Any) {
+        UIView.animate(withDuration: 1, animations: {
+            self.animationLabel.transform = CGAffineTransform(scaleX: 2, y: 1)
+        }, completion: nil)
+    }
+    
 }
