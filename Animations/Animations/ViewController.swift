@@ -33,4 +33,10 @@ class ViewController: UIViewController {
             self.animationLabel.transform = CGAffineTransform(rotationAngle: 90 * .pi / 180)
         }, completion: nil)
     }
+    
+    @IBAction func translationAnimation(_ sender: Any) {
+        UIView.animate(withDuration: 1, animations: {
+            self.animationLabel.transform = CGAffineTransform(translationX: 0, y: 50)
+        }, completion: nil)
+    }
 }
