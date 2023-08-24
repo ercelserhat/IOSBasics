@@ -41,8 +41,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func repeatAnimation(_ sender: Any) {
-        UIView.animate(withDuration: 2, delay: 0, options: [.curveEaseInOut, .repeat], animations: {
+        UIView.animate(withDuration: 2, delay: 0, options: [.curveEaseInOut, .repeat, .autoreverse], animations: {
             self.animationLabel.transform = CGAffineTransform(translationX: 0, y: 50)
+        }, completion: nil)
+    }
+    
+    @IBAction func multipleAnimation(_ sender: Any) {
+        UIView.animate(withDuration: 1, animations: {
+            let hareket = CGAffineTransform(translationX: 0, y: 50)
+            let kucul = CGAffineTransform(scaleX: 0.5, y: 0.5)
+            let don = CGAffineTransform(rotationAngle: 90 * .pi / 180)
+            
+            let x = hareket.concatenating(kucul)
+        
+            self.animationLabel.transform = don.concatenating(x)
+            self.animationLabel.alpha = 0.5
         }, completion: nil)
     }
 }

@@ -78,6 +78,17 @@
                                     <action selector="repeatAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4om-s9-U8A"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMU-GS-S0V">
+                                <rect key="frame" x="80" y="553" width="233" height="35"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Multiple">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="multipleAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4d-lE-yis"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -87,10 +98,13 @@
                             <constraint firstItem="1bP-Ij-kVM" firstAttribute="top" secondItem="DgD-k2-LBg" secondAttribute="bottom" constant="25" id="6gG-nc-ME5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="axa-ud-C8s" secondAttribute="trailing" constant="80" id="Ad1-Bt-Ivy"/>
                             <constraint firstItem="8pi-f6-nk2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="BBv-6z-uHe"/>
+                            <constraint firstItem="jMU-GS-S0V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="C41-dh-KgR"/>
                             <constraint firstItem="1bP-Ij-kVM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="Cws-Y5-akX"/>
+                            <constraint firstItem="jMU-GS-S0V" firstAttribute="top" secondItem="axa-ud-C8s" secondAttribute="bottom" constant="25" id="D4L-VP-YbX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1bP-Ij-kVM" secondAttribute="trailing" constant="80" id="EX8-eY-vXu"/>
                             <constraint firstItem="WAd-oE-3nm" firstAttribute="top" secondItem="TBv-b8-aZE" secondAttribute="bottom" constant="25" id="J3a-38-6px"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TBv-b8-aZE" secondAttribute="trailing" constant="80" id="NpJ-hy-l69"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jMU-GS-S0V" secondAttribute="trailing" constant="80" id="POX-UY-ooe"/>
                             <constraint firstItem="TBv-b8-aZE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="RX0-ut-jDR"/>
                             <constraint firstItem="axa-ud-C8s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="RyW-Gi-Cy7"/>
                             <constraint firstItem="WAd-oE-3nm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="Xye-T7-5Fx"/>
