@@ -28,4 +28,9 @@ class ViewController: UIViewController {
         }, completion: nil)
     }
     
+    @IBAction func rotateAnimation(_ sender: Any) {
+        UIView.animate(withDuration: 1, animations: {
+            self.animationLabel.transform = CGAffineTransform(rotationAngle: 90 * .pi / 180)
+        }, completion: nil)
+    }
 }
