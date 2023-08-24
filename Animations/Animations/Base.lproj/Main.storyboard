@@ -101,13 +101,60 @@
                                     <action selector="sequentialAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3XY-yw-eHV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7G-WJ-e7n">
+                                <rect key="frame" x="303" y="728" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Hdx-qi-qtR"/>
+                                    <constraint firstAttribute="height" constant="60" id="Qhx-34-Kts"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="fabMainTikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M83-hm-Qym"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4H6-eU-fTC">
+                                <rect key="frame" x="303" y="648" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Q5D-tI-5Ru"/>
+                                    <constraint firstAttribute="width" constant="60" id="uko-TM-wm2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="fabBirinciTikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HiN-Ud-uqw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x85-Zo-qsW">
+                                <rect key="frame" x="303" y="568" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="eOy-bm-dfS"/>
+                                    <constraint firstAttribute="width" constant="60" id="jGW-cH-wwM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="trash" catalog="system">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="fabIkinciTikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2s-kV-pzq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L7G-WJ-e7n" secondAttribute="bottom" constant="30" id="12Q-kQ-EgO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DgD-k2-LBg" secondAttribute="trailing" constant="80" id="2Xu-EV-HTW"/>
                             <constraint firstItem="DgD-k2-LBg" firstAttribute="top" secondItem="WAd-oE-3nm" secondAttribute="bottom" constant="25" id="6BB-y0-GRU"/>
                             <constraint firstItem="1bP-Ij-kVM" firstAttribute="top" secondItem="DgD-k2-LBg" secondAttribute="bottom" constant="25" id="6gG-nc-ME5"/>
+                            <constraint firstItem="4H6-eU-fTC" firstAttribute="top" secondItem="x85-Zo-qsW" secondAttribute="bottom" constant="20" id="9pA-6I-0gu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="axa-ud-C8s" secondAttribute="trailing" constant="80" id="Ad1-Bt-Ivy"/>
                             <constraint firstItem="8pi-f6-nk2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="BBv-6z-uHe"/>
                             <constraint firstItem="jMU-GS-S0V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="C41-dh-KgR"/>
@@ -120,16 +167,23 @@
                             <constraint firstItem="TBv-b8-aZE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="RX0-ut-jDR"/>
                             <constraint firstItem="axa-ud-C8s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="RyW-Gi-Cy7"/>
                             <constraint firstItem="WAd-oE-3nm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="Xye-T7-5Fx"/>
+                            <constraint firstItem="L7G-WJ-e7n" firstAttribute="top" secondItem="4H6-eU-fTC" secondAttribute="bottom" constant="20" id="dYE-BB-IA7"/>
                             <constraint firstItem="TBv-b8-aZE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dbv-5F-Hkh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L7G-WJ-e7n" secondAttribute="trailing" constant="30" id="dha-wF-Dcy"/>
                             <constraint firstItem="TBv-b8-aZE" firstAttribute="top" secondItem="8pi-f6-nk2" secondAttribute="bottom" constant="80" id="jOl-5S-vMa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WAd-oE-3nm" secondAttribute="trailing" constant="80" id="mzO-L6-SU1"/>
                             <constraint firstItem="8pi-f6-nk2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="onB-ii-NXt"/>
                             <constraint firstItem="axa-ud-C8s" firstAttribute="top" secondItem="1bP-Ij-kVM" secondAttribute="bottom" constant="25" id="ozw-HE-H1N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4H6-eU-fTC" secondAttribute="trailing" constant="30" id="s7h-Ei-5Vv"/>
                             <constraint firstItem="DgD-k2-LBg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="sqO-Vj-K2M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x85-Zo-qsW" secondAttribute="trailing" constant="30" id="yB4-DC-rps"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="animationLabel" destination="8pi-f6-nk2" id="d4z-RY-v4T"/>
+                        <outlet property="fabBirinci" destination="4H6-eU-fTC" id="zCO-cP-ztd"/>
+                        <outlet property="fabIkinci" destination="x85-Zo-qsW" id="EmB-wA-UmA"/>
+                        <outlet property="fabMain" destination="L7G-WJ-e7n" id="TUC-ik-qYN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -138,11 +192,23 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="trash" catalog="system" width="117" height="128"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
