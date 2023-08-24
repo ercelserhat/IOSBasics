@@ -58,4 +58,19 @@ class ViewController: UIViewController {
             self.animationLabel.alpha = 0.5
         }, completion: nil)
     }
+    @IBAction func sequentialAnimation(_ sender: Any) {
+        UIView.animate(withDuration: 1, animations: {
+            self.animationLabel.transform = CGAffineTransform(scaleX: 2, y: 1)
+        }, completion: {(true) in
+            UIView.animate(withDuration: 1, animations: {
+                self.animationLabel.transform = CGAffineTransform(scaleX: 1, y: 2)
+            }, completion: {(true) in
+                UIView.animate(withDuration: 1, animations: {
+                    self.animationLabel.transform = CGAffineTransform(scaleX: 1, y: 1)
+                }, completion: {(true) in
+                    print("Ardışık animasyon bitti.")
+                })
+            })
+        })
+    }
 }
