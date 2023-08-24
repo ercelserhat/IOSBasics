@@ -39,4 +39,10 @@ class ViewController: UIViewController {
             self.animationLabel.transform = CGAffineTransform(translationX: 0, y: 50)
         }, completion: nil)
     }
+    
+    @IBAction func repeatAnimation(_ sender: Any) {
+        UIView.animate(withDuration: 2, delay: 0, options: [.curveEaseInOut, .repeat], animations: {
+            self.animationLabel.transform = CGAffineTransform(translationX: 0, y: 50)
+        }, completion: nil)
+    }
 }
