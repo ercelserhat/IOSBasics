@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func translationAnimation(_ sender: Any) {
-        UIView.animate(withDuration: 1, delay: 1, animations: {
+        UIView.animate(withDuration: 2, delay: 0, options: [.curveEaseInOut], animations: {
             self.animationLabel.transform = CGAffineTransform(translationX: 0, y: 50)
         }, completion: nil)
     }
